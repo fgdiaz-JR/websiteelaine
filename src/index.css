@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom gallery styles (small thumbnails) */
+.thumb-strip img{
+  width: 40px;
+  border: 2px solid #2563EB;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all ease-in-out 0.8s;
+  cursor: pointer;
+  margin: 0 3px;
+}
+.thumb-strip img:hover{
+  filter: saturate(100%);
+  width: 100%;
+}
+
+body { font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial }
